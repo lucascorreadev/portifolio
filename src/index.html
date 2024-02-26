@@ -1,133 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>Correa Dev</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/font.css">
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </head>
+
+<header class="md:justify-around md:flex">
+  <img src="./images/correa-logo.svg" alt="" width="80" height="80">
+  <nav class="flex px-4 space-x-6 lg:space-x-12">
+    <button>
+      Sobre
+    </button>
+    <button>
+      Tech Stack
+    </button>
+    <button>
+      Projetos
+    </button>
+    <button>
+      Contato
+    </button>
+    <button>
+      <img src="./images/github.svg" alt="Github logo">
+    </button>
+    <button>
+      <img src="./images/linkedin.svg" alt="Linkedin logo">
+    </button>
+  </nav>
+</header>
+
+
 <body>
-    <div class="pb-12">
-        <header class="flex mt-10 justify-evenly">
-          <p>Luquinhas</p>
-          <nav class="flex justify-evenly">
-            <ul class="flex space-x-12">
-                <li>
-                    About
-                </li>
-                <li>
-                    Tech Stack
-                </li>
-                <li>
-                    Projects
-                </li>
-                <li>
-                    Contact
-                </li>
-            </ul>
-            <ul class="grid grid-cols-2 pl-6 divide-x">
-                <li class="pr-2">
-                    <img src="./images/github.svg" alt="Github logo">
-                </li>
-                <li class="pl-2">
-                    <img src="./images/linkedin.svg" alt="Linkedin logo">
-                </li>
-            </ul>
-          </nav>
-        </header>
-        <main class="py-[8rem]">
-          <section class="flex pl-[11rem] pr-[14rem] pt-12 w-full justify-between">
-            <div class="">
-              <h1 class="pl-8 mt-12 text-4xl">Hi 👋, 
-                <br>My name is 
-                <br>Lucas Corrêa
-                <br>I build things for web</h1>
-            </div>
-            <div class="relative group">
-              <div class="animate-tilt absolute -inset-0.5 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-              <img src="./images/lucas-image.png" alt="" class="relative h-[21rem] w-[21rem] rounded-full" />
-            </div>
-          </section>
-          <section class="p-32">
-            <div class="flex flex-col items-center justify-center">
-              <h1 class="text-3xl">My Tech Stack</h1>
-              <h3 class="text-xl">Technologies I’ve been working with recently</h3>
-            </div>
-            <ul class="grid grid-cols-6 gap-8 mt-8">
-                <li>
-                    <img src="./images/javascript.svg" alt="Javascript logo" width="80" height="80">
-                </li>
-                <li class="">
-                    <img src="./images/react.svg" alt="React logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/mongodb.svg" alt="MongoDB logo" width="80" height="80">
-                </li>
-                <li>
-                  <img src="./images/mysql.svg" alt="MySQL logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/next-js.svg" alt="NextJS logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/node-js.svg" alt="NodeJS logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/tailwind-css.svg" alt="TailwindCSS logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/typescript.svg" alt="Typescript logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/docker.svg" alt="Docker logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/jest.svg" alt="Jest logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/mocha-svgrepo-com.svg" alt="Mocha logo" width="80" height="80">
-                </li>
-                <li>
-                    <img src="./images/testing-library.svg" alt="Testing library logo" width="80" height="80">
-                </li>
-            </ul>
-          </section>
-        </main>
-         <footer class="flex flex-col flex-wrap">
-            <section class="flex justify-around pb-12">
-                    <p>luquinhas</p>
-            <div class="flex">
-              <p class="pr-4">+55 (31) 982182147</p>
-              <p>fclucascorrea@gmail.com</p>
-            </div>
-            <div class="flex">
-                <ul class="pr-2">
-                    <img src="./images/github.svg" alt="Github logo">
-                </ul>
-                <ul class="pl-2">
-                    <img src="./images/linkedin.svg" alt="Linkedin logo">
-                </ul>
-            </div>
-            </section>
-          <hr>
-          <nav class="flex justify-between px-6 pt-8">
-            <ul class="flex space-x-10">
-              <li>
-                About
-              </li>
-              <li>
-                Tech Stack
-              </li>
-              <li>
-                Projects
-              </li>
-              <li>
-                Contact
-              </li>
-            </ul>
-            <p>Desenvolvido com ☕ & ❤️ </p>
-          </nav>
-          </footer>
-        </div>
+
+  <section class="flex justify-between w-full py-[6rem] lg:px-[18rem] sm:px-[4rem] flex-col">
+    <div class="flex flex-col items">
+      <img src="./images/lucas-image.png" alt=""
+        class="relative h-[12rem] w-[12rem] sm:h-[15rem] sm:w-[15rem] lg:h-[21rem] lg:w-[21rem] rounded-full border-2 border-green-500" />
+      <div class="flex pt-12">
+        <h1 class="pt-2 pl-2 font-bold sm:text-xl lg:text-3xl">Olá!</h1>
+        <dotlottie-player class="pb-4 pl-2 lg:pb-0"
+          src="https://lottie.host/d671a3fb-3b6e-48ee-8030-f40ec4e2a6ac/VP8gTWfwWB.json" background="transparent"
+          speed="1" style="width: 50px; height: 50px;" loop autoplay></dotlottie-player>
+      </div>
+      <h1 class="relative pl-2 font-bold -top-10 sm:text-xl lg:text-3xl">
+        <br>Meu nome é
+        <br>Lucas Corrêa
+        <br>E eu crio coisas pra internet
+      </h1>
+
+    </div>
+  </section>
+
+
+  <section class="p-32 overflow-x-hidden">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="text-3xl">Tech Stack</h1>
+      <h3 class="pt-4 text-xl">Tecnologias que trabalhei recentemente</h3>
+    </div>
+    <div
+      class="w-full pt-8 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+      <ul
+        class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+        <li>
+          <img src="./images/docker.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/javascript.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/mongodb.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/mysql.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/next-js.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/node-js.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/react.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/tailwind-css.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/typescript.svg" width="120" height="120" />
+        </li>
+      </ul>
+      <ul
+        class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        aria-hidden="true">
+        <li>
+          <img src="./images/docker.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/javascript.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/mongodb.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/mysql.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/next-js.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/node-js.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/react.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/tailwind-css.svg" width="120" height="120" />
+        </li>
+        <li>
+          <img src="./images/typescript.svg" width="120" height="120" />
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+
+  <footer class="flex flex-col flex-wrap">
+    <div class="flex justify-around pb-6">
+      <img src="./images/correa-logo.svg" alt="" width="90" height="90">
+      <div class="flex items-center">
+        <p class="pr-4">+55 (31) 982182147</p>
+        <p>fclucascorrea@gmail.com</p>
+      </div>
+      <nav class="flex space-x-2">
+        <button>
+          <img src="./images/github.svg" alt="Github logo">
+        </button>
+        <button>
+          <img src="./images/linkedin.svg" alt="Linkedin logo">
+        </button>
+      </nav>
+    </div>
+    <hr style="width:50%; margin-left:25%; margin-right:25%">
+
+    <div class="flex justify-around py-12">
+      <nav class="flex space-x-8">
+        <button>
+          Sobre
+        </button>
+        <button>
+          Tech Stack
+        </button>
+        <button>
+          Projetos
+        </button>
+        <button>
+          Contato
+        </button>
+      </nav>
+      <p>Desenvolvido com ❤️ e ☕</p>
+    </div>
+  </footer>
 </body>
+
 </html>
